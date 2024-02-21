@@ -25,8 +25,8 @@ int main(){
     cin>>k;
     cout<<"\n";
 
-int first=0;
-int last=0;
+int first=-1;
+int last=1;
     int start=0,end=n-1,mid;
     while(start<=end)
     {
