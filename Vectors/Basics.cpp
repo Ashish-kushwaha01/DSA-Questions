@@ -43,5 +43,12 @@ for(int i=0;i<n;i++){
     cout<<b[i]<< " ";
 }
 
+cout<<"Size of first vector : "<<a.size()<<" \n";
+cout<<"Size of second vector : "<<b.size()<<" \n";
+
+cout<<"Capacity of first vector : "<<a.capacity()<<" \n";
+cout<<"Capacity of second vector : "<<b.capacity()<<" \n";
+b.push_back(5);
+cout<<"Capacity of second vector : "<<b.capacity()<<" \n";
 return 0;
 }
