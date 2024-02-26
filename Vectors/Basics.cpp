@@ -23,5 +23,25 @@ for(int i=0;i<10;i++){
     cout<<a[i]<<" ";
 }
 
+/* 
+    second method 
+*/
+
+int n;
+cout<<"Enter how many no. you want to take with user : ";
+cin>>n;
+vector<int>b(n);
+
+
+for(int i=0;i<n;i++){
+    cout<<"Enter no. "<< i+1<< " : ";
+    cin>>b[i];
+}
+
+cout<<"Your no. are : \n";
+for(int i=0;i<n;i++){
+    cout<<b[i]<< " ";
+}
+
 return 0;
 }
