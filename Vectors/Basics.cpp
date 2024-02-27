@@ -23,6 +23,8 @@ for(int i=0;i<10;i++){
     cout<<a[i]<<" ";
 }
 
+
+
 /* 
     second method 
 */
@@ -50,5 +52,43 @@ cout<<"Capacity of first vector : "<<a.capacity()<<" \n";
 cout<<"Capacity of second vector : "<<b.capacity()<<" \n";
 b.push_back(5);
 cout<<"Capacity of second vector : "<<b.capacity()<<" \n";
+
+cout<<"Print  ";
+
+// b.pop_back();
+cout<<"Your no. are : \n";
+for(int i=0;i<n;i++){
+    cout<<b[i]<< " ";
+}
+
+cout<<"\n\n";
+a.erase(a.begin()+3);
+a.pop_back();
+cout<<"Capacity of first vector : "<<a.capacity()<<" \n";
+
+a.pop_back();
+for(int i=0;i<a.size();i++){
+    cout<<a[i]<<" ";
+}
+cout<<"Capacity of first vector : "<<a.capacity()<<" \n";
+
+a.erase(a.begin()+4);
+for(int i=0;i<a.size();i++){
+    cout<<a[i]<<" ";
+    
+}
+    // Insert a given no. at a definite index :
+cout<<"Capacity of second vector : "<<b.capacity()<<" \n";
+cout<<"\n\n";
+
+    a.insert(a.begin()+4,28);
+for(int i=0;i<a.size();i++){
+    cout<<a[i]<<" ";
+}
+
 return 0;
+
+// Use pop_back to remove elements .
+
+
 }
