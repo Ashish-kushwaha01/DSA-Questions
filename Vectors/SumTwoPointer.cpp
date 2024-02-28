@@ -12,6 +12,11 @@ int main(){
 int target = 13;
 // int n=arr.size();
 
+
+//  Creating a vector , so space complexity is O(n);
+//  Time complexity is O(n);
+
+
 vector<int>a;
 int start=0,end=8;
 while(start<end){
