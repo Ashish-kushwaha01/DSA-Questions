@@ -4,44 +4,22 @@
 #include<algorithm>
 #include<limits.h>
 using namespace std;
-int Search(int n,int arr[][1000], int target){
-    for(int i = 0;i<n;i++){
-        for(int j=0;j<n;j++){
-            if(arr[i][j]== target)
-            return 1;
-        }
-    }
-    return -1;
-}
+
 int main(){
-    int n;
-    cout<<"Enter that how many no. you have ? : ";
-    cin>>n;
-    int arr[n][n];
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            cout<<"Enter element ["<<i+1<<","<<j+1<<"] : ";
-            cin>>arr[i][j];
+    int arr[3][3]= {1,2,3,4,5,6,7,8,9};
+    int x;
+    cout<<"Enter which no. you want to search : ";
+    cin>>x;
+
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            if(arr[i][j]==x){
+            cout<<"Index of your element is : ";
+            cout<<"["<<i<<","<<j<<"]" ;
+            return 0;
         }
     }
-
-    cout<<"\n\n";
-
-    cout<<"Your elements are : ";
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            cout<<arr[i][j];
-        }
-        cout<<"\n";
     }
-
-
-    int target ;
-    cout<<"Enter your target : ";
-    cin>>target;
-
-    cout<<Search(n,arr,target);
-
-    return 0;
+    cout<<"Sorry! Your element is not found ";
 
 }
