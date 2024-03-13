@@ -29,7 +29,7 @@ int main(){
         cout<<" \n";
     }
     int top=0,bottom=row-1,left=0,right=column-1;
-    while(top<bottom){
+    while(top<=bottom ){
         for(int i=top;i<=right;i++)
         cout<<arr[top][i]<<" ";
     
