@@ -29,21 +29,26 @@ int main(){
         cout<<" \n";
     }
     int top=0,bottom=row-1,left=0,right=column-1;
-    while(top<=bottom ){
+    while(top<=bottom && left<=right ){
         for(int i=top;i<=right;i++)
         cout<<arr[top][i]<<" ";
     
     top++;
+    
     for(int j=top;j<=bottom;j++)
     cout<<arr[j][right]<<" ";
-
+    
     right--;
+    if(top<=bottom)
+    {
     for(int k=right;k>=left;k--)
     cout<<arr[bottom][k]<<" ";
-
+}
     bottom--;
+    if(right>=left){
     for(int l=bottom;l>=top;l--)
     cout<<arr[l][left]<<" ";
+    }
     left++;
 
 
