@@ -29,9 +29,18 @@ int main(){
             temp = new Node(arr[i]);
             temp->next=Head;
             Head=temp;
-        }
 
-    }
+            
+        }
+       
+
+    } 
+      //  Add extra element 
+      
+     Node *Add;
+            Add = new Node(56);
+            Add->next=Head;
+            Head=Add;
 
     // Print elements .
 
