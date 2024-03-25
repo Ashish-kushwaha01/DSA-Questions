@@ -16,21 +16,21 @@ class Node{
 };
 int main(){
 
-    int arr[] = {4,5,6,27};
+    // int arr[] = {4,5,6,27};
     Node *Head = NULL;
     Node *tail = NULL;
 
-    for(int i=0;i<4;i++){
+    // for(int i=0;i<4;i++){
         if(Head==NULL){
-            Head = new Node(arr[i]);
+            Head = new Node(7);
             tail = Head;
         }
 
-        else {
-            tail->next = new Node(arr[i]);
+        // else 
+            tail->next = new Node(45);
             tail= tail->next;
-        }
-    }
+        
+    // }
 
     tail = Head;
     while(tail!=NULL){
