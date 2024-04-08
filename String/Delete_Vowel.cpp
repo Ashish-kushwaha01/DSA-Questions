@@ -6,17 +6,21 @@ int main(){
     string s;
     cout<<"Enter your string : ";
     cin>>s;
-string str = "";
+
     int n = s.size();
-    for(int i=0;i<n;i++){
-        if(s[i]!='a'||s[i]!='e'||s[i]!='i'||s[i]!='o'||s[i]!='u'){
-            str+=s[i];
-            i--;
+    for(int i=0;i<n-1;i++){
+        if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'){
+            for(int j=i;j<n-1;j++){
+            s[j]=s[j+1];
+           
+            } 
+            n--;
+            
         }
     }
 
 
-    cout<<"After removing all vowels in my string is : "<<str;
+    cout<<"After removing all vowels in my string is : "<<s;
 
     return 0;
 }
