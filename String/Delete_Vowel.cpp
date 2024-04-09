@@ -5,12 +5,11 @@ using namespace std;
 int main(){
     string s;
     cout<<"Enter your string : ";
-    cin>>s;
-
+    getline(cin,s);
     int n = s.size();
     for(int i=0;i<n-1;i++){
         if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'){
-            for(int j=i;j<n-1;j++){
+            for(int j=i;j<n;j++){
             s[j]=s[j+1];
            
             } 
